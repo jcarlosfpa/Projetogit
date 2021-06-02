@@ -1,0 +1,46 @@
+#Configuração ----------------------------------
+git config --global user.name "nome"
+git config --global user.email "email"
+git config --global core.editor vscode
+
+#Ler configurações
+git config user.name
+git config user.email
+--ler tudo---
+git config --list
+
+#Inicializar um repositorio git
+git init
+git add nomedoarquivo (somente um)
+git add -A (todos)
+git commit -m "meu comit" (adicionando um commit)
+git commit -am "meu commit" (para criar commit sem adicionar os arquivos alterados)
+
+#Branch ---
+git branch (saber em qual estou)
+git branch teste (criar novo branch)
+git checkout teste (trocar de branch)
+
+#Reset ---
+git reset --soft codigo commit (voltar e deixar preparadas)
+git reset --mixed codigo commit (voltar sem deixar preparado add)
+git reset --hard codigo commit (voltar tudo zerar
+
+#Revert ---
+git revert --no-edit codigo do commit (Reverter um commit mas mantelo para quando precisar)
+
+#Mudanças ---
+git diff (alterações feitas antes de commitar)
+git diff --name-only (mostrar somente o nome dos arquivos alterados)
+git diff arquivo (alteração apenas no arquivo especifico)
+git checkout HEAD -- arquivo (voltar mudanças de arquivo especifico)
+
+#Mandar pro GitHub
+git remote add origin
+-como ver
+git remote
+git remote -v
+git push -u origin
+
+#Códigos
+arquivo .gitignore (colocar os arquivos que deseja ignorar)
